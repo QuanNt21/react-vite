@@ -1,9 +1,10 @@
 import React from 'react';
+import "./MyComponent.scss"
 
-const MyComponent = () => {
+const MyComponent = (props) => {
     return (
-        <div>
-            <p>Hello my component</p>
+        <div className='my-component'>
+            {props.count}
         </div>
     );
 };
